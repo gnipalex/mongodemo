@@ -1,16 +1,20 @@
 package org.github.alex.hnyp.mongodemo.document;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Person {
-
-    @Id
-    private String id;
 
     private String name;
 
     private int age;
+
+    private String address;
 
 }
